@@ -15,7 +15,7 @@ jobs:
         needs: first-job
         steps:
           - name: echo a string
-            run: write-output "window strings"
+            run: Write-Output "window strings"
           - name: error steps
             run: doesnotexist
 
