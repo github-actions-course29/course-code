@@ -12,6 +12,7 @@ jobs:
                npm -v    # npm version 
     dependent-job:
         runs-on: window-latest
+        needs: first-job
         steps:
           - name: echo a string
             run: write-output "window strings"
