@@ -10,14 +10,13 @@ jobs:
               run: |
                node -v   # node version
                npm -v    # npm version 
-    dependent-job:
-        runs-on: window-latest
-        needs: first-job
-        steps:
-          - name: echo a string
-            run: Write-Output "window strings"
-          - name: error steps
-            run: doesnotexist
+    second-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: fetch the code
+          uses: actions/checkout@v3
+        - name: deploying the site
+          run: deploying...
 
     
 
