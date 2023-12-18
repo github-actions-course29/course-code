@@ -15,8 +15,7 @@ jobs:
       steps:
         - name: fetch the code
           uses: actions/checkout@v3
-        - name: deploying the site
-          run: deploying...
-
+        - name: echon a string
+          run: echo "hello world"
     
 
