@@ -10,3 +10,13 @@ jobs:
               run: |
                node -v   # node version
                npm -v    # npm version 
+    dependent-job:
+        runs-on: window-latest
+        steps:
+          - name: echo a string
+            run: write-output "window strings"
+          - name: error steps
+            run: doesnotexist
+
+    
+
